@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.header_text{
+    display: flex;
+    
+}
+.header_text a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header_text a:hover{
+    text-decoration: underline;
+}
+.header_assets{
+    display: flex;
+}
+.header_assets .img1{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.header_assets .img2{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin-top: -5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+main{
+    display: grid;
+    place-items: center;
+    
+    padding-top: 120px;
+}
+.googlediv{
+    display: grid;
+    place-items: center;
+    /* text-align: center; */
+}
+main img{
+    width: 292px;
+}
+
+.input{
+    border-radius: 50px;
+    border: 1px solid rgba(37, 34, 34, 0.3);
+    padding: 13px;
+    width: 170%;
+    margin-top: 15px;
+}
+
+.flex_input{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.flex_input input{
+    border: none;
+    width: 90%;
+}
+.flex_input i{
+    width: 5%;
+}
+.flex_input input:focus{
+    outline: none;
+
+}
+
+.shade{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.buttons button{
+    border: transparent;
+    padding: 13px;
+    font-size: 12px;
+    width: 49%;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.buttons button:focus{
+    outline: none;
+}
+.buttons button:hover{
+    border: 1px solid rgba(37, 34, 34, 0.3);
+}
+.googlediv p{
+    margin-top: 40px;
+}
+.googlediv p a{
+    text-decoration: none;
+}
+.googlediv p a:hover{
+    text-decoration: underline;
+}
+footer{
+    background-color: rgba(19, 17, 17, 0.1);
+    padding: 10px;
+    margin-top: 140px;
+}
+.footcont,.footcont2{
+    width: 98%;
+    margin: auto;
+    
+}
+.footcont{
+    margin-bottom: 10px;
+}
+.footcont2 .iner{
+    display: flex;
+    margin-top: 7px;
+    justify-content: space-between;
+}
+.footcont2 .iner div{
+    display: flex;
+    
+ 
+}
+/* .iner .one{
+    width: 30%;
+}
+.iner .two{
+    width: 14%;
+} */
+.iner div a{
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    
+}
+
+.iner div a:hover{
+    text-decoration: underline;
+}
+.googlediv .break{
+    display: none;
+}
+@media(max-width:685px){
+    .input{
+        width: 150%;
+    }
+}
+
+@media(max-width:625px){
+    .input{
+        width: 130%;
+    }
+    .footcont2 .iner{
+        flex-direction: column;
+    }
+    .iner .one, .iner .two{
+        width: 100%;
+    }
+    .iner div{
+        place-content: center;
+        margin-bottom: 10px;
+    }
+    .dn{
+        display: none;
+    }
+    footer{
+        margin-top: 100px;
+    }
+}
+
+
+@media(max-width:529px){
+    .input{
+        width: 120%;
+    }
+    
+    .buttons{
+        width: 89%;
+        
+    }
+}
+@media(max-width:486px){
+    .input{
+        width: 100%;
+    }
+}
+@media(max-width:418px){
+    .input{
+        width: 90%;
+    }
+    .g{
+        width: 232px;
+    }
+}
+@media(max-width:420px){
+    .googlediv p span{
+        display: none;
+    }
+    .googlediv .break{
+        display: block;
+        margin-top: 15px;
+    }
+    footer{
+        margin-top: 70px;
+    }
+}
+
+@media(max-width:380px){
+    .input{
+        width: 80%;
+    }
+    .g{
+        width: 180px;
+    }
+  
+}
